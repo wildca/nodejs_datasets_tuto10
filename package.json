@@ -1,0 +1,27 @@
+{
+  "name": "tiny-blog-backend",
+  "version": "0.1.0",
+  "description": "Backend for tiny-blog",
+  "main": "index.js",
+  "repository": "https://github.com/strangedev/tiny-blog-backend",
+  "author": "Noah Hummel",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "fluture": "^10.3.1",
+    "mongodb": "^3.1.13",
+    "ramda": "^0.26.1",
+    "tiny-blog-db": "^0.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/babel src -d build",
+    "server": "node build/index.js"
+  }
+}
